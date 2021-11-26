@@ -1,0 +1,9 @@
+extends layout/layout-01
+
+block content
+    .w-content 
+        p= main.title 
+        ul
+            each link in main.links
+                li
+                    a(href=link)= link
